@@ -1,0 +1,21 @@
+# Быстрый запуск minio сервера на windows
+
+# Отрыть Windows Powershell
+# 1. Команда для скачивания minio.exe
+# Invoke-WebRequest -Uri "https://dl.min.io/server/minio/release/windows-amd64/minio.exe" -OutFile "C:\minio.exe"
+
+# 2. Создаем пользователя
+# setx MINIO_ROOT_USER admin
+
+# 3. Присваиваем пароль
+# setx MINIO_ROOT_PASSWORD password
+
+# 4. Запускаем minio сервер
+# C:\minio.exe server F:\Data --console-address ":9001"
+
+
+#### Обратите внимание куда вы скачиваете minio.exe и откудв потом пытаетесь его запустить ####
+
+
+### Ссылка на документацию по установке minio на windows
+https://min.io/download#/windows
