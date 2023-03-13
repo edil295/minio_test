@@ -64,7 +64,7 @@ class Certificate(models.Model):
 # рабочий метод save с CRM. Но с minio пока что не работает
 
 
-    def save(self, *args, **kwargs):
+#     def save(self, *args, **kwargs):
         # path = os.path.exists(f'files/PEM/{self.username}_{datetime.now().strftime("%Y-%m-%d_%H-%M")}')
         # if not path:
         #     os.makedirs(f'files/PEM/{self.username}_{datetime.now().strftime("%Y-%m-%d_%H-%M")}')
